@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mindtree.orchardadmin">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/logowhite"
+        android:label="Orchard Admin"
+        android:largeHeap="true"
+        android:theme="@style/MyTheme">
+        <receiver android:name=".InternetReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".Splashscreen"
+            android:label="Orchard Admin">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Login"
+            android:label="Orchard Admin">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".TaskSelect"
+            android:label="@string/title_activity_product_select">
+            <intent-filter>
+                <action android:name="connected" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".About"
+            android:label="@string/title_activity_about" />
+        <activity android:name=".ChangePassword"  android:label="Change Password" />
+        <activity android:name=".RegisterUser"   android:label="Register "/>
+        <activity android:name=".UnregisterUser"  android:label="Unregister"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:visibility="visible"
+    tools:context="com.mindtree.orchardadmin.UnregisterUser">
+
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/radioGroup"
+        android:layout_width="386dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <RadioButton
+            android:id="@+id/singleRadio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:checked="false"
+            android:onClick="onRadioButtonClicked"
+            android:text="Single User"
+            android:textColor="#286b9c" />
+
+        <RadioButton
+            android:id="@+id/multipleRadio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:checked="false"
+            android:onClick="onRadioButtonClicked"
+            android:text="Multiple Users"
+            android:textColor="#286b9c" />
+    </RadioGroup>
+
+    <RelativeLayout
+        android:layout_below="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/singleRelativeLayout"
+        android:visibility="gone">
+
+        <EditText
+            android:id="@+id/singleMID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="10dp"
+            android:hint="Enter MID to unregister:"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            android:textColorHint="#2495ea"
+            android:textSize="17sp" />
+
+        <Button
+            android:id="@+id/submitSingle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:text="Submit"
+            android:layout_below="@+id/singleMID" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_below="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/multipleRelativeLayout"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Enter range of MIDs. All campus minds whose MID are in given range will be unregistered."
+            android:textColor="#134e7a"
+            android:textSize="8pt" />
+
+        <EditText
+            android:id="@+id/enterStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView2"
+            android:layout_marginTop="10dp"
+            android:hint="Enter starting MID:"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            android:textColorHint="#2495ea"
+            android:textSize="17sp" />
+
+        <EditText
+            android:id="@+id/enterEnd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/enterStart"
+            android:layout_marginTop="10dp"
+            android:hint="Enter ending MID:"
+            android:imeOptions="actionDone"
+            android:inputType="text"
+            android:textColorHint="#2495ea"
+            android:textSize="17sp" />
+
+        <Button
+            android:id="@+id/submitMultiple"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/enterEnd"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:text="Submit" />
+    </RelativeLayout>
+</RelativeLayout>

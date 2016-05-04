@@ -1,0 +1,22 @@
+<resources>
+    <string name="action_settings">About</string>
+    <string name="title_activity_product_select">Orchard Admin</string>
+    <string name="title_activity_about">About</string>
+    <string name="webFormat"><![CDATA[<html><body style=\"text-align:justify;color:#286b9c;\"> %s </body></Html>]]></string>
+    <string name="about">This app can be used to register new campus minds so that they can use Mindtree Kalinga apps. After deployment of campus minds, they can be unregistered.</string>
+    <string name="leadsInfo"><![CDATA[<html>Hema Natarajan (<a href=\"https://social.mindtree.com/myPeople.aspx?accountname=mindtree\\M1002934&Page=user\">M1002934</a>)<br>Vamsi Krishna VVSR (<a href=\"https://social.mindtree.com/myPeople.aspx?accountname=mindtree\\M1033421&Page=user\">M1033421</a>)</html>]]></string>
+    <string name="teamInfo"><![CDATA[<html>Team captain: Dharmesh Khandelwal (<a href=\"https://social.mindtree.com/myPeople.aspx?accountname=mindtree\\M1036144&Page=user\">M1036144</a>)<br>Baibhav Vishal (<a href=\"https://social.mindtree.com/myPeople.aspx?accountname=mindtree\\M1036034&Page=user\">M1036034</a>)<br>Chirayu Singhvi (<a href=\"https://social.mindtree.com/myPeople.aspx?accountname=mindtree\\M1035998&Page=user\">M1035998</a>)<br>Raghav Sharma (<a href=\"https://social.mindtree.com/myPeople.aspx?accountname=mindtree\\M1036143&Page=user\">M1036143</a>)</html>]]></string>
+    <string name="color">#2495ea</string>
+    <string name="format">text/html</string>
+    <string name="unicode">utf-8</string>
+    <string name="usage">Usage:</string>
+    <string name="leads">Leads:</string>
+    <string name="exit">Exit</string>
+    <string name="development_team">Development Team:</string>
+    <string name="u00a9_mindtree_ltd_nall_rights_reserved">© Mindtree Ltd.\nAll Rights Reserved</string>
+    <string name="mindtree_logo">Mindtree Logo</string>
+    <string name="splashscreen">Splashscreen</string>
+    <string name="enter_mid_e_g_m1234567">Enter MID: (e.g. M1234567)</string>
+    <string name="start">Start</string>
+
+</resources>
